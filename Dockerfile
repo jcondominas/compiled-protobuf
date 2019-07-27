@@ -1,6 +1,5 @@
 FROM golang:1.12
 
-## Install protobuf files for cld3 compilation
 RUN apt-get update &&  apt-get -y install autoconf automake libtool curl make g++ unzip
 WORKDIR protobuf
 RUN wget https://github.com/protocolbuffers/protobuf/releases/download/v3.7.0/protobuf-all-3.7.0.tar.gz
